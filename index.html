@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sensemaking Loop POI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="google-signin-client_id" content="382841289857-7t2r43er16hbi6i0c7bdi7ojfvl52jr3.apps.googleusercontent.com">
+        <meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Sensemaking Loop POI <small id="user" class="user"></small></h1>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div id="map" class="map"></div>
+        </div>
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                Made with <span class="heart">♥</span> by <a href="https://github.com/thpoiani" class="name">Thiago Henrique Poiani</a>
+            </footer>
+        </div>
+
+        <div class="sk-overlay google">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
+
+        <div class="sk-overlay loader">
+            <div class="sk-folding-cube">
+              <div class="sk-cube1 sk-cube"></div>
+              <div class="sk-cube2 sk-cube"></div>
+              <div class="sk-cube4 sk-cube"></div>
+              <div class="sk-cube3 sk-cube"></div>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-51027304-9', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+        <script src="https://apis.google.com/js/client:platform.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoSKs9pE0SJMH4wkxcRGvdlzfQp28tupc&amp;libraries=places&amp;language=pt-BR&amp;region=BR"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
